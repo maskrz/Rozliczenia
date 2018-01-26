@@ -1,16 +1,16 @@
 module.exports = function (grunt) {
     grunt.initConfig({	 
-    	clean: ['bower_components/'],
+    	clean: ['main/webapp/WEB-INF/resources/lib/', 'bower_components/'],
     	bowercopy: {
     		options: {
     			srcPrefix: 'node_modules'
     		},
     		scripts: {
     			options: {
-    				destPrefix: 'WebContent'
+    				destPrefix: 'src'
     		    },
     		    files: {
-    		    	'WEB-INF/resources/lib/angular/core.umd.js': '@angular/core/bundles/core.umd.js',
+    		    	'main/webapp/WEB-INF/resources/lib/angular/core.umd.js': '@angular/core/bundles/core.umd.js',
 //    		    	'WebContent/WEB-INF/resources/lib/angular/angular-resource.js': 'angular-resource/angular-resource.js',
 //    		    	'WebContent/WEB-INF/resources/lib/angular/angular-animate.js': 'angular-animate/angular-animate.js',
 //    		    	'WebContent/WEB-INF/resources/lib/angucomplete-alt/angucomplete-alt.js': 'angucomplete-alt/angucomplete-alt.js',
